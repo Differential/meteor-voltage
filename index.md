@@ -8,9 +8,9 @@ desc: Provides easy, editable, static pages. Editable in Markdown.
 ---
 # Meteor Voltage
 
-This is a meteorite package that gives you a basic, out-of-the-box blog at
-`/blog`.  We wanted something to work with that uses Iron Router, Bootstrap 3,
-and didn't require us to run another dyno for a meteor-based blog.
+This package provides easy, editable, static pages. Perfect for your `About`,
+`Terms Of Service`, and `Contact Us` pages. Somewhat inspired by the Rails
+[high-voltage](https://github.com/thoughtbot/high_voltage) gem.
 
 ## Quick Start
 
