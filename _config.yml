@@ -1,5 +1,5 @@
-name: meteor-blog
+name: meteor-voltage
 markdown: redcarpet
 pygments: true
-baseurl: /meteor-blog
+baseurl: /meteor-voltage
 exclude: ["vendor"]
