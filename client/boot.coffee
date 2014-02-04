@@ -17,7 +17,7 @@ Voltage =
 # Bootstrap Code
 #
 
-Meteor.subscribe 'singlePage'
+Meteor.subscribe 'pages'
 
 Meteor.startup ->
   $('<link>',
