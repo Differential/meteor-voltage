@@ -53,9 +53,9 @@
         }, 250));
 
         // Set up editor buttons
-        var buttons = "<button style=\"margin-left: 20px;\" class=\"for-editing btn btn-success\"><i class=\"icon-edit\"></i>Edit This Page</button>"
-                    + "<button style=\"margin-left: 20px;\" class=\"editing for-saving btn btn-danger\"><i class=\"icon-edit\"></i>Save</button>"
-                    + "<button style=\"margin-left: 8px;\" class=\"editing for-canceling btn btn-danger\"><i class=\"icon-ban-circle\"></i>Cancel</button>"
+        var buttons = "<button style=\"margin-left: 20px;\" class=\"for-editing btn btn-success\"><i class=\"icon-edit\"></i> Edit This Page</button>"
+                    + "<button style=\"margin-left: 20px;\" class=\"editing for-saving btn btn-danger\"><i class=\"icon-edit\"></i> Save</button>"
+                    + "<button style=\"margin-left: 8px;\" class=\"editing for-canceling btn btn-danger\"><i class=\"icon-ban-circle\"></i> Cancel</button>"
                     + "<small style=\"vertical-align: middle; margin-left: 20px; font-size: 14px;\" class=\"editing\">"
                     + "  <a target=\"_blank\" href=\"http://daringfireball.net/projects/markdown/syntax\"><strong>Markdown</strong> syntax guide</a>"
                     + "</small>";
