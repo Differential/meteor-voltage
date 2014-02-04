@@ -18,15 +18,18 @@ user. Somewhat inspired by the Rails
 
 ```
 mrt add voltage
+mrt add iron-router
 ```
 
-Add a `iron-router` route for your static page. The route MUST use the following
-custom action:
+Add an `iron-router` route for your static page. The route must use the custom
+action and subscription:
 
 {% highlight coffeescript %}
 Router.map ->
   @route 'aboutUs',
     path: '/about-us'
+    waitOn: ->
+      Meteor.subscribe 'voltagePages'
     action: ->
       Voltage.render @
 {% endhighlight %}
