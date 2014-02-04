@@ -4,10 +4,10 @@ class @Page extends Minimongoid
 
 Page._collection.allow
   insert: (userId, item) ->
-    Meteor.call 'isAuthorized'
+    Meteor.call 'isVoltageAuthorized'
 
   update: (userId, item, fields) ->
-    Meteor.call 'isAuthorized'
+    Meteor.call 'isVoltageAuthorized'
 
   remove: (userId, item) ->
-    Meteor.call 'isAuthorized'
+    Meteor.call 'isVoltageAuthorized'
