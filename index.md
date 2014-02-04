@@ -43,5 +43,5 @@ Repeat for any other static pages you need.
 ## Example Project
 
 There is an example project with instructions running at
-http://voltage-example.meteor.com. The example project is also on
+[voltage-example.meteor.com](http://voltage-example.meteor.com). The example project is also on
 [GitHub](https://github.com/BeDifferential/voltage-example).
