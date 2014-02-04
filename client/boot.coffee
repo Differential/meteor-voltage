@@ -10,6 +10,10 @@ Voltage =
   config: (appConfig) ->
     @settings = _.extend(@settings, appConfig)
 
+  render: (router) ->
+    router.render 'voltageBlank'
+    router.render 'voltagePage'
+
 @Voltage = Voltage
 
 
