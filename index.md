@@ -39,3 +39,9 @@ layout. If you log in (`Meteor.user()` returns a user), you should see an `Edit`
 button for the page.
 
 Repeat for any other static pages you need.
+
+## Example Project
+
+There is an example project with instructions running at
+http://voltage-example.meteor.com. The example project is also on
+[GitHub](https://github.com/BeDifferential/voltage-example).
