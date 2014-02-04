@@ -4,7 +4,7 @@ Meteor.startup ->
   # Migrations and such
   #
 
-  Page._collection._ensureIndex 'slug': 1
+  Page._collection._ensureIndex 'name': 1
 
   ##############################################################################
   # Server-side config

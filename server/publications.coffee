@@ -1,2 +1,2 @@
-Meteor.publish 'singlePage', (slug) ->
-  Page.find slug: slug
+Meteor.publish 'voltagePages', () ->
+  Page.find()
