@@ -2,7 +2,7 @@
 layout: default
 username: BeDifferential
 repo: meteor-voltage
-version: 0.0.4
+version: 0.0.6
 desc: Provides easy, editable, static pages. Editable in Markdown.
 
 ---
@@ -39,6 +39,24 @@ layout. If you log in (`Meteor.user()` returns a user), you should see an `Edit`
 button for the page.
 
 Repeat for any other static pages you need.
+
+## Roles
+
+By default, any logged-in user can edit Voltage pages. To ensure that only
+select users can edit pages, specify an `adminRole` in Voltage config:
+
+{% highlight coffeescript %}
+if Meteor.isServer
+  Voltage.config
+    adminRole: 'admin'
+{% endhighlight %}
+
+Then, you need to give admin users that role. Currently, you're on your own
+to add these roles somehow:
+
+* Add these directly to admin users in the database (`"roles": ["admin"]`), or
+* Roll your own admin page using the methods provided by [meteor-roles](https://atmosphere.meteor.com/package/roles), or
+* Use an accounts admin package like [accounts-admin-ui-bootstrap-3](https://atmosphere.meteor.com/package/accounts-admin-ui-bootstrap-3).
 
 ## Example Project
 
