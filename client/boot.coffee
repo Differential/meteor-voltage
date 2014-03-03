@@ -12,7 +12,8 @@ Voltage =
 
   render: (router) ->
     router.render 'voltageBlank'
-    router.render 'voltagePage'
+    router.template = 'voltagePage'
+    router.render()
 
 @Voltage = Voltage
 
