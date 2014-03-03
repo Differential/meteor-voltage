@@ -1,7 +1,15 @@
-Template.voltagePage.rendered = ->
+Template.voltagePage.created = ->
+  Meteor.call 'isVoltageAuthorized', (err, authorized) ->
+    Session.set 'isVoltageAuthorized', authorized
 
+
+Template.voltagePage.helpers
+  isVoltageAuthorized: ->
+    Session.get 'isVoltageAuthorized'
+
+
+Template.voltagePage.rendered = ->
   slug = window.location.pathname.replace(/\//g, '-').slice(1)
-  console.log slug
 
   $('.voltage').addClass slug
 

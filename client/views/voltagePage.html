@@ -1,8 +1,10 @@
 <template name="voltagePage">
 
   <div class="voltage {{slug}}">
-    {{voltageEditor}}
-    <div id="voltage-editor" hidden></div>
+    {{#if isVoltageAuthorized}}
+      <div id="voltage-editor-btns"></div>
+      <div id="voltage-editor" hidden></div>
+    {{/if}}
     <div id="voltage-data"></div>
   </div>
 

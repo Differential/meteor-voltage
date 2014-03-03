@@ -33,9 +33,5 @@ Meteor.startup ->
 # Register Global Helpers
 #
 
-Handlebars.registerHelper "voltageEditor", ->
-  if Meteor.user()
-    return new Handlebars.SafeString '<div id="voltage-editor-btns"></div>'
-
 Handlebars.registerHelper "voltagePage", ->
   new Handlebars.SafeString Template.voltagePage(this)
