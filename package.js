@@ -14,6 +14,8 @@ Package.on_use(function(api) {
     'templating',
     'handlebars',
     'less',
+    'deps',
+    'session',
     'ace-embed'
   ], 'client');
 

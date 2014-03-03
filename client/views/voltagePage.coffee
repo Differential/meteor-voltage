@@ -1,6 +1,9 @@
-Template.voltagePage.created = ->
-  Meteor.call 'isVoltageAuthorized', (err, authorized) ->
-    Session.set 'isVoltageAuthorized', authorized
+Deps.autorun ->
+  if Meteor.user()
+    Meteor.call 'isVoltageAuthorized', (err, authorized) ->
+      Session.set 'isVoltageAuthorized', authorized
+  else
+    Session.set 'isVoltageAuthorized', false
 
 
 Template.voltagePage.helpers
