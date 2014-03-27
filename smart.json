@@ -4,7 +4,7 @@
   "homepage": "http://github.differential.io/meteor-voltage/",
   "author": "Differential (http://differential.io)",
   "version": "0.0.7",
-  "git": "https://github.com/BeDifferential/meteor-voltage.git",
+  "git": "https://github.com/Differential/meteor-voltage.git",
   "packages": {
     "minimongoid": "0.8.3",
     "roles": "1.2.6",
