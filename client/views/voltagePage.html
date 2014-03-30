@@ -2,12 +2,16 @@
 
   <div class="voltage {{slug}}">
     {{#if isVoltageAuthorized}}
-      <div id="voltage-editor-btns"></div>
+      {{> voltageEditor}}
     {{/if}}
-    <div id="voltage-editor" hidden></div>
     <div id="voltage-data"></div>
   </div>
 
+</template>
+
+<template name="voltageEditor">
+  <div id="voltage-editor-btns"></div>
+  <div id="voltage-editor" hidden></div>
 </template>
 
 <template name="voltageBlank">

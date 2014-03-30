@@ -3,12 +3,6 @@
   Voltage = {
     Editor: function(options) {
 
-      this.options = {};
-      this.$aceContainer = null;
-      this.$dataContainer = null;
-      this.$btnsContainer = null;
-      this.editor = null;
-
       this.init = function(options) {
 
         // Merge user options with defaults
@@ -21,20 +15,22 @@
           markdown: $.noop
         }, options);
 
+        return this;
+      };
+
+      this.renderData = function() {
+        this.$dataContainer = $(this.options.dataContainer).show();
+        this.$dataContainer.html(this.options.html());
+      };
+
+      this.renderEditor = function() {
+
+        var self = this;
+
         // Set up jQuery containers
         this.$aceContainer = $(this.options.aceContainer);
         this.$dataContainer = $(this.options.dataContainer);
         this.$btnsContainer = $(this.options.btnsContainer);
-
-        return this;
-      };
-
-      this.render = function() {
-
-        var self = this;
-
-        // Insert the content (do this 1st to cut down on wait)
-        this.$dataContainer.html(this.options.html());
 
         // Create and configure Ace Editor instance
         this.editor = ace.edit(this.$aceContainer[0]);
@@ -109,7 +105,7 @@
         this.$dataContainer.html(this.options.html());
       }, this);
 
-      this.init(options).render();
+      this.init(options);
 
     } // End Editor class
   }; // End Voltage

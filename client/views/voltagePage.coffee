@@ -1,3 +1,5 @@
+editor = new Voltage.Editor
+
 Deps.autorun ->
   if Meteor.user()
     Meteor.call 'isVoltageAuthorized', (err, authorized) ->
@@ -8,6 +10,7 @@ Deps.autorun ->
 
 Template.voltagePage.helpers
   isVoltageAuthorized: ->
+    editor.renderData()
     Session.get 'isVoltageAuthorized'
 
 
@@ -16,7 +19,7 @@ Template.voltagePage.rendered = ->
 
   $('.voltage').addClass slug
 
-  new Voltage.Editor
+  options =
     update: (markdown) =>
       page = Page.first name: slug
 
@@ -40,3 +43,9 @@ Template.voltagePage.rendered = ->
         return page.text
 
       ''
+
+  editor.init(options).renderData()
+
+
+Template.voltageEditor.rendered = ->
+  editor.renderEditor()
