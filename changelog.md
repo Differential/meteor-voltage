@@ -8,6 +8,12 @@ desc: Provides easy, editable, static pages. Editable in Markdown.
 ---
 # Changelog
 
+### v0.1.0
+
+_NOTE: `0.1.0` is not guaranteed to work with Meteor `0.7.x` and below. If you are using an older version of Meteor, use Voltage `0.0.7`._
+
+* Meteor `0.8.x` compatibility
+
 ### v0.0.7
 
 * Fix layout issue when extending RouteController

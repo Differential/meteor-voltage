@@ -1,8 +1,8 @@
 ---
 layout: default
-username: BeDifferential
+username: Differential
 repo: meteor-voltage
-version: 0.0.7
+version: 0.1.0
 desc: Provides easy, editable, static pages. Editable in Markdown.
 
 ---
