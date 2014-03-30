@@ -9,5 +9,3 @@ user. Somewhat inspired by the Rails
 Example project: http://voltage-example.meteor.com
 
 See full [documentation](http://github.differential.io/meteor-voltage/).
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/BeDifferential/meteor-voltage/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
