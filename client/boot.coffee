@@ -11,9 +11,10 @@ Voltage =
     @settings = _.extend(@settings, appConfig)
 
   render: (router) ->
-    router.render 'voltageBlank'
-    router.template = 'voltagePage'
-    router.render()
+    if router.ready()
+      router.render 'voltageBlank'
+      router.template = 'voltagePage'
+      router.render()
 
 @Voltage = Voltage
 
@@ -34,5 +35,5 @@ Meteor.startup ->
 # Register Global Helpers
 #
 
-Handlebars.registerHelper "voltagePage", ->
-  new Handlebars.SafeString Template.voltagePage(this)
+UI.registerHelper "voltagePage", ->
+  new Spacebars.SafeString Template.voltagePage(this)
