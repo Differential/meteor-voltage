@@ -1,12 +1,16 @@
 ---
 layout: default
-username: BeDifferential
+username: Differential
 repo: meteor-voltage
-version: 0.0.7
+version: 0.1.1
 desc: Provides easy, editable, static pages. Editable in Markdown.
 
 ---
 # Changelog
+
+### v0.1.1
+
+* Add support for anchor links [#7](https://github.com/Differential/meteor-voltage/pull/7)
 
 ### v0.1.0
 
