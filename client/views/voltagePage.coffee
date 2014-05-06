@@ -46,6 +46,21 @@ Template.voltagePage.rendered = ->
 
   editor.init(options).renderData()
 
+  # anchor fragment support
+  hash = document.location.hash.substr(1)
+  if hash && !Template.voltagePage.scrolled
+    scroller = ->
+      $("html, body").stop()
+
+    Meteor.setTimeout(->
+      elem = $('#' + hash)
+      if elem.length
+        scroller().scrollTop(elem.offset().top)
+        Template.voltagePage.scrolled = true
+    , 0)
+    
+Template.voltagePage.destroyed = ->
+  delete Template.voltagePage.scrolled
 
 Template.voltageEditor.rendered = ->
   editor.renderEditor()
