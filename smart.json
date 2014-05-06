@@ -3,7 +3,7 @@
   "description": "Provides easy, editable, static pages. Editable in Markdown.",
   "homepage": "http://github.differential.io/meteor-voltage/",
   "author": "Differential (http://differential.io)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "git": "https://github.com/Differential/meteor-voltage.git",
   "packages": {
     "minimongoid": "0.8.3",
