@@ -13,6 +13,7 @@ Meteor.startup ->
   Voltage =
     settings:
       adminRole: null
+      adminGroup: null
 
     config: (appConfig) ->
       @settings = _.extend(@settings, appConfig)
@@ -28,7 +29,7 @@ Meteor.startup ->
       if not Meteor.user()
         return false
 
-      if Voltage.settings.adminRole and not Roles.userIsInRole(Meteor.user(), Voltage.settings.adminRole)
+      if Voltage.settings.adminRole and not Roles.userIsInRole(Meteor.user(), Voltage.settings.adminRole, Voltage.settings.adminGroup)
         return false
 
       true
