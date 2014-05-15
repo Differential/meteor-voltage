@@ -2,11 +2,15 @@
 layout: default
 username: Differential
 repo: meteor-voltage
-version: 0.1.1
+version: 0.1.2
 desc: Provides easy, editable, static pages. Editable in Markdown.
 
 ---
 # Changelog
+
+### v0.1.2
+
+* Add support for groups in `meteor-roles` [#9](https://github.com/Differential/meteor-voltage/pull/9)
 
 ### v0.1.1
 
