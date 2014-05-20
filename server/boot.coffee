@@ -30,11 +30,13 @@ Meteor.startup ->
         return false
 
       # if role AND group is passed
-      if Voltage.settings.adminRole and Voltage.settings.adminGroup and not Roles.userIsInRole(Meteor.user(), Voltage.settings.adminRole, Voltage.settings.adminGroup)
-        return false
+      if Voltage.settings.adminRole and Voltage.settings.adminGroup
+        if not Roles.userIsInRole(Meteor.user(), Voltage.settings.adminRole, Voltage.settings.adminGroup)
+          return false
 
       # if only role is passed
-      if Voltage.settings.adminRole and not Roles.userIsInRole(Meteor.user(), Voltage.settings.adminRole)
-        return false
+      else if Voltage.settings.adminRole
+        if not Roles.userIsInRole(Meteor.user(), Voltage.settings.adminRole)
+          return false
 
       true
