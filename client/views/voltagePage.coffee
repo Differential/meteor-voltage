@@ -33,7 +33,7 @@ Template.voltagePage.rendered = ->
       page = Page.first name: slug
 
       if page
-        return marked page.text
+        return page.html || marked page.text
 
       ''
     markdown: () =>
