@@ -6,7 +6,7 @@
   "version": "0.1.3",
   "git": "https://github.com/Differential/meteor-voltage.git",
   "packages": {
-    "minimongoid": "0.8.3",
+    "minimongoid": {},
     "roles": {},
     "marked": {},
     "ace-embed": {}
