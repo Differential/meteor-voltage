@@ -12,9 +12,9 @@ Voltage =
 
   render: (router) ->
     if router.ready()
-      router.render 'voltageBlank'
-      router.template = 'voltagePage'
-      router.render()
+      Meteor.setTimeout ->
+        router.render 'voltagePage'
+      , 0
 
 @Voltage = Voltage
 
