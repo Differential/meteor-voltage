@@ -1,8 +1,11 @@
 Package.describe({
-  summary: "A package that provides easy, editable, static pages"
+  summary: "A package that provides easy, editable, static pages",
+  version: "0.1.3",
+  git: "https://github.com/Differential/meteor-voltage.git"
 });
 
 Package.on_use(function(api) {
+  api.versionsFrom("METEOR@0.9.0");
 
   var both = ['client', 'server'];
 
