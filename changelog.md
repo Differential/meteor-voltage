@@ -2,11 +2,15 @@
 layout: default
 username: Differential
 repo: meteor-voltage
-version: 0.1.3
+version: 0.2.0
 desc: Provides easy, editable, static pages. Editable in Markdown.
 
 ---
 # Changelog
+
+### v0.2.0
+
+* Make compatible with Meteor 0.9.0 package server
 
 ### v0.1.3
 
