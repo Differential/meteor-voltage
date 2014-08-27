@@ -20,7 +20,7 @@ Package.onUse(function(api) {
     'less',
     'deps',
     'session',
-    'mrt:ace-embed'
+    'mrt:ace-embed@0.0.4'
   ], 'client');
 
   /**
@@ -51,9 +51,9 @@ Package.onUse(function(api) {
   api.use([
     'coffeescript',
     'accounts-base',
-    'mrt:minimongoid',
-    'alanning:roles',
-    'chuangbo:marked'
+    'mrt:minimongoid@0.8.8',
+    'alanning:roles@1.2.12',
+    'chuangbo:marked@0.3.4'
   ], both);
 
   /**
