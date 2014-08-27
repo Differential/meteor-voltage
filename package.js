@@ -1,10 +1,11 @@
 Package.describe({
   summary: "A package that provides easy, editable, static pages",
   version: "0.1.3",
+  name: "hellogerard:voltage",
   git: "https://github.com/Differential/meteor-voltage.git"
 });
 
-Package.on_use(function(api) {
+Package.onUse(function(api) {
   api.versionsFrom("METEOR@0.9.0");
 
   var both = ['client', 'server'];
@@ -19,14 +20,14 @@ Package.on_use(function(api) {
     'less',
     'deps',
     'session',
-    'ace-embed'
+    'mrt:ace-embed'
   ], 'client');
 
   /**
    * Files for client
    */
 
-  api.add_files([
+  api.addFiles([
     'client/boot.coffee',
     'client/compatibility/voltage.editor.js',
     'client/views/voltagePage.less',
@@ -38,7 +39,7 @@ Package.on_use(function(api) {
    * Files for server
    */
 
-  api.add_files([
+  api.addFiles([
     'server/boot.coffee',
     'server/publications.coffee'
   ], 'server');
@@ -50,16 +51,16 @@ Package.on_use(function(api) {
   api.use([
     'coffeescript',
     'accounts-base',
-    'minimongoid',
-    'roles',
-    'marked'
+    'mrt:minimongoid',
+    'alanning:roles',
+    'chuangbo:marked'
   ], both);
 
   /**
    * Files for server and client
    */
 
-  api.add_files([
+  api.addFiles([
     'collections/page.coffee'
   ], both);
 });
