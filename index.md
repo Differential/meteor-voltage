@@ -17,8 +17,8 @@ user. Somewhat inspired by the Rails
 ## Quick Start
 
 ```
-mrt add voltage
-mrt add iron-router
+meteor add hellogerard:voltage
+meteor add iron:router
 ```
 
 Add an `iron-router` route for your static page. The route must use the custom
