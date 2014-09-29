@@ -20,7 +20,7 @@ Package.onUse(function(api) {
     'less',
     'deps',
     'session',
-    'mrt:ace-embed@0.0.4'
+    'mandrill:ace@1.0.2'
   ], 'client');
 
   /**
@@ -53,7 +53,7 @@ Package.onUse(function(api) {
     'accounts-base',
     'mrt:minimongoid@0.8.8',
     'alanning:roles@1.2.12',
-    'chuangbo:marked@0.3.4'
+    'chuangbo:marked@0.3.5'
   ], both);
 
   /**
