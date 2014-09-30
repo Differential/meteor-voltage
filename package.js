@@ -1,6 +1,6 @@
 Package.describe({
   summary: "A package that provides easy, editable, static pages",
-  version: "0.2.0",
+  version: "0.2.1",
   name: "hellogerard:voltage",
   git: "https://github.com/Differential/meteor-voltage.git"
 });
